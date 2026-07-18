@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Krapa Reserve Gold",
-  description: "Krapa Reserve Gold is a gold-backed digital asset offering secure, transparent, and convenient access to gold for individuals and institutions",
+  title: "Krapa Reserve Gold - Pure Value, Pure Trust.",
+  description: "A digital asset backed by physical gold, offering secure, transparent, and convenient access to gold for individuals and institutions",
 };
 
 export default function RootLayout({
