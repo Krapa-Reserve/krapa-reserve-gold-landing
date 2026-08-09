@@ -10,6 +10,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { cn } from "@/lib/utils";
 
 const items = [
   { label: "English", value: "english" },
@@ -19,7 +20,7 @@ const items = [
 
 export default function Nav() {
   return (
-    <div className="flex w-full py-6 bg-transparent sticky top-0 z-50 bg-background/80 backdrop-blur-md">
+    <div className="flex w-full py-6 bg-transparent bg-background/80 backdrop-blur-xl absolute top-0">
       <div className="flex justify-between items-center w-full max-w-[88rem] mx-auto md:px-8">
         {/** left side*/}
         <div className="flex items-center">
@@ -72,7 +73,7 @@ export default function Nav() {
           <a
             href="https://app.krapa.gold"
             target="_blank"
-            className={buttonVariants({ variant: "link" })}
+            className={cn(buttonVariants({ variant: "link" }), "hover:text-white")}
           >
             Login
           </a>
