@@ -3,7 +3,12 @@ import { cn } from "@/lib/utils";
 
 export default function Banner() {
   return (
-    <div className="flex items-center justify-center w-full">
+    <div 
+        className="flex items-center justify-center w-full bg-cover bg-center bg-no-repeat"
+        style={{
+            backgroundImage: "url('/banner.png')"
+        }}
+    >
         <div className="flex flex-col h-screen w-full items-center justify-between">
             {/** top */}
             <div className="flex flex-col items-center mt-48 gap-2">
@@ -24,7 +29,7 @@ export default function Banner() {
                     <a
                         href="https://krapa.gold"
                         target="_blank"
-                        className={cn(buttonVariants({ variant: "outline" }), "h-14 min-w-48 px-10 text-sm")}
+                        className={cn(buttonVariants({ variant: "secondary" }), "h-14 min-w-48 px-10 text-sm")}
                     >
                         Read Our Docs
                     </a>
