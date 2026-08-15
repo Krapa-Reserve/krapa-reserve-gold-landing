@@ -6,16 +6,27 @@ import { cn } from "@/lib/utils";
 export default function Banner() {
   return (
     <div 
-        className="flex items-center justify-center w-full bg-cover bg-center bg-no-repeat"
+        className="relative flex w-full items-center justify-center bg-cover bg-center bg-no-repeat"
         style={{
             backgroundImage: "url('/banner.png')"
         }}
     >
-        <div className="flex flex-col h-screen w-full items-center justify-between">
+        <div
+            className="absolute inset-0 bg-gradient-to-b from-background/55 via-background/15 to-background/75"
+            aria-hidden
+        />
+        <div className="relative flex flex-col h-screen w-full items-center justify-between">
             {/** top */}
-            <div className="flex flex-col items-center mt-48 gap-2 max-lg:gap-4 max-lg:max-w-md max-sm:max-w-sm">
-                <p className="text-center text-4xl max-lg:text-3xl max-sm:text-2xl">PURE VALUE. PURE TRUST.</p>
-                <p className="text-center text-7xl max-lg:text-6xl max-sm:text-5xl font-bold ">Real Gold. Virtual Access.</p>
+            <div className="flex max-w-4xl flex-col items-center px-4 pt-28 text-center sm:pt-32 md:pt-36 lg:pt-40">
+                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-muted-foreground">
+                    Pure Value · Pure Trust
+                </p>
+                <h1 className="mt-3 text-4xl font-bold leading-[1.08] text-primary sm:mt-4 sm:text-5xl md:text-6xl lg:text-7xl">
+                    Real Gold.
+                    <br />
+                    Virtual Access.
+                </h1>
+
             </div>
             
             {/** middle */}
