@@ -1,5 +1,7 @@
-import { Button, buttonVariants } from "@/components/ui/button";
+import { ArrowRight, BookOpen } from "lucide-react";
+import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+
 
 export default function Banner() {
   return (
@@ -17,22 +19,26 @@ export default function Banner() {
             </div>
             
             {/** middle */}
-            <div className="flex flex-col items-center">
-                <div className="flex gap-2">
-                    <a
-                        href="https://app.krapa.gold"
-                        target="_blank"
-                        className={cn(buttonVariants({ variant: "default" }), "h-14 max-lg:h-12 max-sm:h-10 min-w-48 max-lg:min-w-40 max-sm:min-w-32 px-10 text-sm max-sm:text-xs")}
-                    >
-                        Buy KAUX
-                    </a> 
-                    <a
-                        href="https://krapa.gold"
-                        target="_blank"
-                        className={cn(buttonVariants({ variant: "secondary" }), "h-14 max-lg:h-12 max-sm:h-10 min-w-48 max-lg:min-w-40 max-sm:min-w-32 px-10 text-sm max-sm:text-xs")}
-                    >
-                        Read Our Docs
-                    </a>
+            <div className="flex w-full max-w-lg flex-col items-center gap-4 px-4 sm:px-0">
+                <div className="w-full border border-primary/25 bg-background/70 p-3 backdrop-blur-xl sm:p-4">
+                    <div className="flex flex-col gap-3 sm:flex-row">
+                        <a
+                            href="https://app.krapa.gold"
+                            target="_blank"
+                            className={cn(buttonVariants({ variant: "default" }), "h-12 w-full gap-2 px-6 text-xs sm:h-14 sm:flex-1 sm:text-sm")}
+                        >
+                            Buy KAUX
+                            <ArrowRight className="size-4 shrink-0" />
+                        </a> 
+                        <a
+                            href="https://krapa.gold"
+                            target="_blank"
+                            className={cn(buttonVariants({ variant: "outline" }), "h-12 w-full gap-2 px-6 text-xs sm:h-14 sm:flex-1 sm:text-sm")}
+                        >
+                            <BookOpen className="size-4 shrink-0" />
+                            Read Our Docs
+                        </a>
+                    </div>
                 </div>
             </div>
 
