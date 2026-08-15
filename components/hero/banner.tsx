@@ -37,19 +37,20 @@ export default function Banner() {
             </div>
 
             {/** bottom */}
-            <div className="flex h-24 w-full items-center justify-evenly bg-secondary">
-                <div className="flex flex-col items-center">
-                    <p className="text-sm max-lg:text-xs text-primary">USD Market Cap</p>
-                    <p className="text-3xl max-lg:text-2xl font-bold"> 
-                        <span>$</span>
-                        <span>100,000</span> 
-                    </p>
+            <div className="w-full border-t border-primary/40 bg-background/80 backdrop-blur-xl">
+                <div className="mx-auto grid w-full max-w-[88rem] grid-cols-2 divide-x divide-border/60 md:px-8">
+                    <div className="flex flex-col items-center justify-center gap-1.5 px-4 py-5 sm:gap-2 sm:py-6">
+                        <p className="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-primary sm:text-xs">USD Market Cap</p>
+                        <p className="text-2xl font-bold tabular-nums sm:text-3xl"> 
+                            <span>$</span>
+                            <span>100,000</span> 
+                        </p>
+                    </div>
+                    <div className="flex flex-col items-center justify-center gap-1.5 px-4 py-5 sm:gap-2 sm:py-6">
+                        <p className="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-primary sm:text-xs">Gold (Kilograms)</p>
+                        <p className="text-2xl font-bold tabular-nums sm:text-3xl">0.2</p>
+                    </div>
                 </div>
-                <div className="flex flex-col items-center">
-                    <p className="text-sm max-lg:text-xs text-primary">Gold (Kilograms)</p>
-                    <p className="text-3xl max-lg:text-2xl font-bold">0.2</p>
-                </div>
-                
             </div>
         </div>
     </div>
