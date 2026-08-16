@@ -30,7 +30,7 @@ export default function Banner() {
             </div>
             
             {/** middle */}
-            <div className="flex w-full max-w-lg flex-col items-center gap-4 px-4 sm:px-0">
+            <div className="flex w-full max-sm:max-w-sm max-w-lg flex-col items-center gap-4 px-4 sm:px-0">
                 <div className="w-full border border-primary/25 bg-background/70 p-3 backdrop-blur-xl sm:p-4">
                     <div className="flex flex-col gap-3 sm:flex-row">
                         <a
